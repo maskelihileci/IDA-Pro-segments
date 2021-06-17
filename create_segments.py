@@ -24,7 +24,7 @@ def create_segment(startea,
 
 def load_file(filename, ea, *, file_offset=0, size=0, end_ea=0):
     if not (size == 0 ^ end_ea == 0):
-        raise ValueError("invalid call to load_file, size and end_ea both 0"
+        raise ValueError("invalid call to load_file, size and end_ea both 0")
     if size == 0:
         size = end_ea - ea
     if end_ea == 0:
